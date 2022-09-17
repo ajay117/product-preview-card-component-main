@@ -14,20 +14,20 @@
   --white: hsl(0, 0%, 100%);
 }
 
-html,
 body {
   margin: 0;
   background-color: var(--cream);
   font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 main {
   border-radius: 10px;
   background-color: var(--white);
   margin: 0 15px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 section {
@@ -107,9 +107,8 @@ button:active {
 @media only screen and (min-width: 900px) {
   main {
     display: flex;
-    width: 60%;
+    width: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
   }
   section,
   .img-container {
